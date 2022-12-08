@@ -13,14 +13,14 @@ function getComputerChoice(choice) {
     return choice
 }
 
-let computerChoice = getComputerChoice()
+const computerChoice = getComputerChoice()
 
 
 function getPlayerChoice(choice) {
     /* input pra pegar a escolha do jogador */
 }
 
-let playerChoice = "rock"
+const playerChoice = "rock"
 
 
 function playRound(computerChoice, playerChoice) {
@@ -39,8 +39,6 @@ function playRound(computerChoice, playerChoice) {
     }else {
         console.log("its a tie");
     }
-    
-    /* rock paper = paper || rock scissors = rock || paper scissors = scissors */
 }
 
 console.log(playRound(computerChoice, playerChoice));
