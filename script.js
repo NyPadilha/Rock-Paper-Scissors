@@ -20,16 +20,27 @@ function getPlayerChoice(choice) {
     /* input pra pegar a escolha do jogador */
 }
 
-let playerChoice = getPlayerChoice()
+let playerChoice = "rock"
 
 
 function playRound(computerChoice, playerChoice) {
-
-    /*
-    rock paper = paper
-    rock scissors = rock
-    paper scissors = scissors
-    */
+    if(computerChoice == "rock" && playerChoice == "paper"){
+        console.log("You Win, Paper beats Rock");
+    }else if(computerChoice == "rock" && playerChoice == "scissors") {
+        console.log("You Lose, Rock beats Scissors");
+    }else if(computerChoice == "paper" && playerChoice == "scissors") {
+        console.log("You Win, Scissors beats paper");
+    }else if(playerChoice == "rock" && computerChoice == "paper"){
+        console.log("You Lose, Paper beats Rock");
+    }else if(playerChoice == "rock" && computerChoice == "scissors") {
+        console.log("You Win, Rock beats Scissors");
+    }else if(playerChoice == "paper" && computerChoice == "scissors") {
+        console.log("You Lose, Scissors beats paper");
+    }else {
+        console.log("its a tie");
+    }
     
-
+    /* rock paper = paper || rock scissors = rock || paper scissors = scissors */
 }
+
+console.log(playRound(computerChoice, playerChoice));
