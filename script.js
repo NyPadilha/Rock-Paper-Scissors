@@ -15,30 +15,21 @@ function getComputerChoice(choice) {
 
 const computerChoice = getComputerChoice()
 
-
-function getPlayerChoice(choice) {
-    /* input pra pegar a escolha do jogador */
-}
-
-const playerChoice = "rock"
-
-
 function playRound(computerChoice, playerChoice) {
+    let winner = ""
     if(computerChoice == "rock" && playerChoice == "paper"){
-        console.log("You Win, Paper beats Rock");
+        winner = ("You Win, Paper beats Rock");
     }else if(computerChoice == "rock" && playerChoice == "scissors") {
-        console.log("You Lose, Rock beats Scissors");
+        winner = ("You Lose, Rock beats Scissors");
     }else if(computerChoice == "paper" && playerChoice == "scissors") {
-        console.log("You Win, Scissors beats paper");
+        winner = ("You Win, Scissors beats paper");
     }else if(playerChoice == "rock" && computerChoice == "paper"){
-        console.log("You Lose, Paper beats Rock");
+        winner = ("You Lose, Paper beats Rock");
     }else if(playerChoice == "rock" && computerChoice == "scissors") {
-        console.log("You Win, Rock beats Scissors");
+        winner = ("You Win, Rock beats Scissors");
     }else if(playerChoice == "paper" && computerChoice == "scissors") {
-        console.log("You Lose, Scissors beats paper");
+        winner = ("You Lose, Scissors beats paper");
     }else {
-        console.log("its a tie");
+        winner = ("its a tie");
     }
 }
-
-console.log(playRound(computerChoice, playerChoice));
