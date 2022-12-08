@@ -14,3 +14,22 @@ function getComputerChoice(choice) {
 }
 
 let computerChoice = getComputerChoice()
+
+
+function getPlayerChoice(choice) {
+    /* input pra pegar a escolha do jogador */
+}
+
+let playerChoice = getPlayerChoice()
+
+
+function playRound(computerChoice, playerChoice) {
+
+    /*
+    rock paper = paper
+    rock scissors = rock
+    paper scissors = scissors
+    */
+    
+
+}
