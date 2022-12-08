@@ -32,3 +32,9 @@ function playRound(computerChoice, playerChoice) {
         console.log("its a tie");
     }
 }
+
+function game(playRound) {
+    for(let i = 0; i < 5; i++){
+        
+    }
+}
